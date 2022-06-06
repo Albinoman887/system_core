@@ -81,10 +81,10 @@ class TrustyKeyMintDevice : public BnKeyMintDevice {
     ScopedAStatus convertStorageKeyToEphemeral(const vector<uint8_t>& storageKeyBlob,
                                                vector<uint8_t>* ephemeralKeyBlob) override;
 
-    ScopedAStatus getRootOfTrustChallenge(array<uint8_t, 16>* challenge) override;
+    ScopedAStatus getRootOfTrustChallenge(array<uint8_t, 16>* challenge);
     ScopedAStatus getRootOfTrust(const array<uint8_t, 16>& challenge,
-                                 vector<uint8_t>* rootOfTrust) override;
-    ScopedAStatus sendRootOfTrust(const vector<uint8_t>& rootOfTrust) override;
+                                 vector<uint8_t>* rootOfTrust);
+    ScopedAStatus sendRootOfTrust(const vector<uint8_t>& rootOfTrust);
 
   protected:
     std::shared_ptr<TrustyKeymaster> impl_;
