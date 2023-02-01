@@ -823,6 +823,7 @@ static const char *snet_prop_key[] = {
     "ro.vendor.warranty_bit",
     "vendor.boot.vbmeta.device_state",
     "vendor.boot.verifiedbootstate",
+    "ro.product.first_api_level",
     NULL
 };
 
@@ -851,6 +852,7 @@ static const char *snet_prop_value[] = {
     "0", // ro.vendor.warranty_bit
     "locked", // vendor.boot.vbmeta.device_state
     "green", // vendor.boot.verifiedbootstate
+    "32", // ro.product.first_api_level
     NULL
 };
 
